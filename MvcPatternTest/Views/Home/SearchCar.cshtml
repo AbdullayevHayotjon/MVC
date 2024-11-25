@@ -1,0 +1,58 @@
+﻿@model CarDTO
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <br/>
+            @if(Model.year == null)
+            {
+                <h1 class="text-center mb-4">Mashina topilmadi!</h1>
+            }
+            else
+            {
+                <h1 class="text-center mb-4">Mashina ma'lumotlari</h1>
+                <table class="table table-bordered table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Mashina haqida</th>
+                            <th>Qiymatlari</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Mashina yili</strong></td>
+                            <td>@Model.year</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mashina turi</strong></td>
+                            <td>@Model.car_type</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kompaniya nomi</strong></td>
+                            <td>@Model.companyName</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mashina modeli</strong></td>
+                            <td>@Model.model</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mashina narxi</strong></td>
+                            <td>@Model.price</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mashina holati</strong></td>
+                            <td>@Model.car_condition</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mashina rasmi</strong></td>
+                            <td>
+                                <img src="~/images/Cars/@Model.car_image_url" alt="img" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+</div>
+

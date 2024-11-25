@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+<div class="card" style="margin-top: 50px;">
+    <div class="card-body">
+        <h2 class="card-title text-center">Create New Car</h2>
+        <form method="post" asp-action="CreateCar" class="forms-sample">
+            <div class="form-group">
+                <label for="Year">Year</label>
+                <input type="text" name="Year" class="form-control" placeholder="Enter car year" required>
+            </div>
+            <div class="form-group">
+                <label for="Type">Car Type</label>
+                <input type="text" name="Type" class="form-control" placeholder="Enter car type" required>
+            </div>
+            <div class="form-group">
+                <label for="CompanyName">Company Name</label>
+                <input type="text" name="CompanyName" class="form-control" placeholder="Enter company name" required>
+            </div>
+            <div class="form-group">
+                <label for="Model">Model</label>
+                <input type="text" name="Model" class="form-control" placeholder="Enter car model" required>
+            </div>
+            <div class="form-group">
+                <label for="Price">Price</label>
+                <input type="text" name="Price" class="form-control" placeholder="Enter car price" required>
+            </div>
+            <div class="form-group">
+                <label for="Condition">Condition</label>
+                <input type="text" name="Condition" class="form-control" placeholder="Enter car condition" required>
+            </div>
+            <div class="form-group">
+                <label for="CarImageURL">Car Image URL</label>
+                <input type="text" name="CarImageURL" class="form-control" placeholder="Enter car image URL" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" style="background-color: #007bff; color:white;">Create Car</button>
+        </form>
+    </div>
+</div>
